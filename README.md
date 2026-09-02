@@ -162,11 +162,11 @@ Two complete example scripts are provided:
 - [`examples/Ara1_m6APAffect.R`](examples/Ara1_m6APAffect.R)
 - [`examples/HeLa1_m6APAffect.R`](examples/HeLa1_m6APAffect.R)
 
-The HeLa example analyzes control and knockdown m6A-seq data together with
-QAPA-derived APA measurements.
-
 The Arabidopsis example demonstrates the analysis of control m6A-seq data
 without treated m6A-seq samples. In this setting, treated m6A values are
 represented by zero placeholders to maintain the required model input
 structure. These values are placeholders and do not represent experimentally
 measured treated m6A signals.
+
+The HeLa example analyzes control and knockdown m6A-seq data together with
+QAPA-derived APA measurements.
