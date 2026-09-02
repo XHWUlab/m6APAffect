@@ -1,0 +1,33 @@
+Package: m6APAreg
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Authors@R: c( person( "Jane", "Doe", email = "jane@example.com", role =
+       c("aut", "cre") ) )
+Description: More about what it does (maybe more than one line). Continuation
+       lines should be indented.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.1.0
+Imports: 
+    biomaRt,
+    Biostrings,
+    ChIPseeker,
+    dplyr,
+    GenomeInfoDb,
+    GenomicRanges,
+    IRanges,
+    limma,
+    locfit,
+    magrittr,
+    methods,
+    movAPA,
+    qvalue,
+    stats,
+    utils,
+    S4Vectors,
+    locfdr,
+    BiocIO
+Suggests: Homo.sapiens, TxDb.Hsapiens.UCSC.hg19.knownGene,
+       TxDb.Hsapiens.UCSC.hg38.knownGene
