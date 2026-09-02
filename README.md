@@ -103,6 +103,13 @@ set, and sequence motif analyses.
 
 The docs/ directory contains preprocessing scripts for the human and Arabidopsis thaliana example datasets. These scripts are independent of the m6APAreg R package and should be run before the downstream R workflows.
 
+### Arabidopsis Data Preprocessing
+
+The Arabidopsis preprocessing workflow processes A-seq and PAS-seq data, performs adapter trimming and read transformation when required, aligns reads with STAR, and generates PAC count matrices using PlantAPAdb.
+
+Script: 
+[`docs/run_Arabidopsis_3prime_seq_plantAPAdb.sh`](docs/run_Arabidopsis_3prime_seq_plantAPAdb.sh)
+
 ### Human Data Preprocessing
 
 The main human preprocessing script is:
@@ -112,13 +119,6 @@ The main human preprocessing script is:
 The corresponding configuration template is:
 
 [`docs/config_hg38.sh`](docs/config_hg38.sh)
-
-### Arabidopsis Data Preprocessing
-
-The Arabidopsis preprocessing workflow processes A-seq and PAS-seq data, performs adapter trimming and read transformation when required, aligns reads with STAR, and generates PAC count matrices using PlantAPAdb.
-
-Script: 
-[`docs/run_Arabidopsis_3prime_seq_plantAPAdb.sh`](docs/run_Arabidopsis_3prime_seq_plantAPAdb.sh)
 
 
 ## Installation
@@ -159,8 +159,8 @@ Replace `"path/to/m6APAffect-main/m6APAreg"` with the actual path to the extract
 
 ## Examples
 Two complete example scripts are provided:
-- [`examples/HeLa1_m6APAffect.R`](examples/HeLa1_m6APAffect.R)
 - [`examples/Ara1_m6APAffect.R`](examples/Ara1_m6APAffect.R)
+- [`examples/HeLa1_m6APAffect.R`](examples/HeLa1_m6APAffect.R)
 
 The HeLa example analyzes control and knockdown m6A-seq data together with
 QAPA-derived APA measurements.
